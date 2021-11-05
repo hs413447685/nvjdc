@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  nvjdc:
+    image: nolanhzy/nvjdc
+    restart: always
+    volumes:
+      - ./Config.json:/app/Config/Config.json:ro
+    ports:
+      - 5703:80
